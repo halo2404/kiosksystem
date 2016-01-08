@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+  <title>Kiosksystem</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Jens Koehler">
+  <meta name="description" content="Kiosksystem fuer die Zeit des Schabbat">
+  <meta name="keywords" content="Schabbat, Frankfurt, Wetter, Zmanim, Hawdalah">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.5.0/fullcalendar.min.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.5.0/fullcalendar.min.js"></script>
+    <link href="hebcal-styles.css" rel="stylesheet">
+	<link href="hebcal-shabbat-style.css" rel="stylesheet">
+	<link href="kiosksystem.css" rel="stylesheet">
+    <!-- CSS fuer das Kiosksystem -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!-- Kopfbereich -->
+  <div id="header">
+	<!-- Kostenlose, frei konfigurierbare Homepage-Uhr von www.schnelle-online.info/Homepage/Tools.html. Ohne Gewähr, ohne Haftung. Nutzungbedingung: Dieser Kommentar und der Link unten dürfen nicht entfernt oder (nofollow) modifiziert werden. -->
+	<div id="gregdatum"><a style="text-decoration:none;border-style:none;color:black" target="_blank" href="http://www.schnelle-online.info/Kalender.html" id="soidate184080707520">Kalender</a></div>
+	<!-- ;font-family:Arial, sans-serif;font-size:14px; -->
+	<script type="text/javascript"> 
+		SOI = (typeof(SOI) != 'undefined') ? SOI : {};(SOI.ac21fs = SOI.ac21fs || []).push(function() {
+		(new SOI.DateTimeService("184080707520", "DE")).setDay2digits(true).start();});
+		(function() {if (typeof(SOI.scrAc21) == "undefined") { SOI.scrAc21=document.createElement('script');SOI.scrAc21.type='text/javascript'; SOI.scrAc21.async=true;SOI.scrAc21.src=((document.location.protocol == 'https:') ? 'https://' : 'http://') + 'homepage-tools.schnelle-online.info/Homepage/atomicclock2_1.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(SOI.scrAc21, s);}})();
+	</script>
+	<!--<br />
+	<a href="http://www.ixq.de/datum/datum.php" target="_blank"><img src="http://www.ixq.de/datum/datum2.php" border="0" alt="heutiger Tag"></a>-->
+	<br />
+	<div id="hendatum"><script type="text/javascript" charset="utf-8"  src="http://www.hebcal.com/etc/hdate-en.js"></script></div>
+	<br />
+	<div id="hhedatum"><script type="text/javascript" charset="utf-8" src="http://www.hebcal.com/etc/hdate-he.js"></script></div>
+	<div id="uhrzeit"><a id="1330221548" href="http://www.uhr-homepage.de">http://www.uhr-homepage.de</a><script src="http://www.uhr-homepage.de/data.php?i=1330221548&h=90&w=177" type="text/javascript"></script></div>
+  </div>
+ 
+ <!-- Inhaltsbereich -->
+  <div id="kalender">
+	<div id="calendar"></div>
+    <script src="hebcal-fullcalendar.js"></script>
+  </div>
+  <div id="wetter">
+	<!-- wetter.com button 300x250-->
+	<div id="wettercom-button-fe1f7d5cd05b24384af1276a36db541a"><link id="wettercom-css" href="http://www.wetter.com/css/woys3.1.css?115836,fe1f7d5cd05b24384af1276a36db541a" rel="stylesheet" type="text/css" />
+	<div id="wettercom-title"><a id="wettercom-citylink" href="http://www.wetter.com/wetter_aktuell/wettervorhersage/3_tagesvorhersage/?id=DE2925533" title="Wetter Frankfurt am Main" target="_blank">Wetter Frankfurt am Main</a></div>
+	<div id="wettercom-woys-fe1f7d5cd05b24384af1276a36db541a"></div>
+	<div id="wettercom-search"><form id ="wettercom-form" method="get" action="http://www.wetter.com/suche" target="_blank">
+	<div id="wettercom-form-label"><label for="wettercom-form-city">Suche</label>
+	</div>
+	<div id="wettercom-form-input">
+	<input id="wettercom-form-city" name="search" type="text" value="PLZ oder Stadt" onfocus="this.value=''" />
+	<button id="wettercom-form-submit" type="submit"><img src="http://www.wetter.com/img/websitetools/woys/submit.gif" alt="submit" /></button>
+	</div>
+	</form>
+	</div>
+	<div id="wettercom-brand">
+	<a id="wettercom-link" href="http://www.wetter.com" target="_blank">
+	<span id="wettercom-more">mehr Wetter auf </span>
+	<img id="wettercom-logo" src="http://www.wetter.com/img/websitetools/woys/logo.png" alt="wetter.com" title="wetter.com" />
+	</a>
+	</div> <div id="wettercom-clear">
+	<script type="text/javascript" src="http://www.wetter.com/js/woys3.1.js?115836,fe1f7d5cd05b24384af1276a36db541a"></script>
+	</div>
+	</div>
+	<!-- wetter.com button 300x250-->
+  </div>
+  <div id="zmanim">
+	<!--Start MyZmanim Widget for: http://localhost:8888  -->
+    <script type="text/javascript" charset="UTF-8" language="javascript" src="http://www.myzmanim.com/widget.aspx?lang=en&mode=Standard&fsize=14&fcolor=003BBE&hcolor=EBF1FF&bcolor=C0C0C0&suf=t&key=q8f%2bRJGDrdeI5RzTMnRMxDnddQfsRZ7FVsgaymm91RL9HkniAmHBXBDFIiESueNNqG5QgzrcBPOi2orwjPcN2g%3d%3d"></script><noscript style="font-family:verdana;">Find your daily zmanim at <a href="http://www.myzmanim.com/">MyZmanim.com</a>.</noscript>
+    <!--End MyZmanim Widget-->
+  </div>
+  <div id="rss">
+	<!--<script type="text/javascript" src="http://output69.rssinclude.com/output?type=js&amp;id=1042352&amp;hash=3e7571979964ddc5b78f7d07402deeb1"></script>-->
+	<!--<iframe width="355 height="600" style="border:none;" src="http://output67.rssinclude.com/output?type=iframe&amp;id=1042352&amp;hash=f76db6649387fe4da20500ec99932767"></iframe>-->
+    <script type="text/javascript" src="http://output78.rssinclude.com/output?type=js&amp;id=1043861&amp;hash=599c90ada3d3664c46e1b32bb2f58eb2"></script>
+	<!--<script type="text/javascript" src="http://output84.rssinclude.com/output?type=js&amp;id=1042347&amp;hash=3061dc79bb13d892e491dac1a659e3c5"></script>-->
+    <!-- Unterbereich -->
+  </div>
+  <div id="lichter">
+	<script type="text/javascript" charset="utf-8"
+		src="http://www.hebcal.com/shabbat/?geo=geoname&amp;geonameid=2925533&amp;m=60&amp;b=30&amp;cfg=j&amp;tgt=_top">
+	</script>
+  </div>
+</body>
+</html>
